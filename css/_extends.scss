@@ -1,0 +1,52 @@
+@import 'variables';
+
+%btn-purchase {
+    display: block;
+    border: 1px solid $color-primary;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    height: 30px;
+}
+
+%btn-actions {
+    border: 1px solid $color-primary;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px 0 11px 0;
+    justify-content: center;
+    font-size: 16px;
+    font-family: $font-primary;
+    background-color: #FFF;
+    color: $color-text;
+}
+
+%input-form {
+    height: 30px;
+    padding-left: 8px;
+    border: 1px solid $color-primary;
+    font-family: $font-primary;
+    color: $color-primary;
+}
+
+%title-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 20px;
+    margin-bottom: 50px;
+
+    h2 {
+        font-size: 23px;
+        width: 55%;
+    }
+
+    .line {
+        height: 1px;
+        width: 80%;
+        color: $color-primary;
+        background-color: $color-primary;
+    }
+}

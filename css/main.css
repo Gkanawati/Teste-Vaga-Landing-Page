@@ -7,7 +7,57 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, label, span {
+#products .container .container-products .product-item a.buttom-item {
+  display: block;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  height: 30px;
+}
+
+#share-form .container form button, #products .container .container-loadMore .btn-loadMore, #FormAlgorithin .container .row form button {
+  border: 1px solid #707070;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 10px 0 11px 0;
+  justify-content: center;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  background-color: #FFF;
+  color: #888888;
+}
+
+#share-form .container form .containerInputs .row input, #FormAlgorithin .container .row form input {
+  height: 30px;
+  padding-left: 8px;
+  border: 1px solid #707070;
+  font-family: Helvetica, sans-serif;
+  color: #707070;
+}
+
+.container .contTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 20px;
+  margin-bottom: 50px;
+}
+.container .contTitle h2 {
+  font-size: 23px;
+  width: 55%;
+}
+.container .contTitle .line {
+  height: 1px;
+  width: 80%;
+  color: #707070;
+  background-color: #707070;
+}
+
+h1, h2, h3, h4, h5, h6, p,
+a, label, span {
   color: #707070;
 }
 
@@ -15,7 +65,6 @@ h1, h2, h3, h4, h5, h6, p, a, label, span {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 #header {
   background-color: #707070;
   padding: 70px 0px 130px 0px;
@@ -85,7 +134,7 @@ h1, h2, h3, h4, h5, h6, p, a, label, span {
   padding-bottom: 20px;
 }
 #FormAlgorithin .container .row form {
-  width: 30%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,13 +143,6 @@ h1, h2, h3, h4, h5, h6, p, a, label, span {
 #FormAlgorithin .container .row form label {
   padding-top: 20px;
   padding-bottom: 7px;
-}
-#FormAlgorithin .container .row form input {
-  height: 30px;
-  padding-left: 8px;
-  border: 1px solid #707070;
-  font-family: Helvetica, sans-serif;
-  color: #707070;
 }
 #FormAlgorithin .container .row form .row {
   justify-content: left;
@@ -112,36 +154,112 @@ h1, h2, h3, h4, h5, h6, p, a, label, span {
   margin-right: 30px;
   color: #888888;
 }
-#FormAlgorithin .container .row form button {
-  height: 39px;
-  padding-left: 8px;
-  border: 1px solid #707070;
-  background-color: #FFF;
-  font-family: Helvetica, sans-serif;
-  border-radius: 4px;
-  font-size: 16px;
-  color: #888888;
+#products {
+  margin-bottom: 128px;
 }
-
 #products .container {
   padding: 0px 30px;
   justify-content: center;
 }
-#products .container .contTitle {
+#products .container .container-products {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#products .container .container-products .product-item {
+  width: 25%;
+  max-width: 220px;
+  margin: 0px 20px;
+}
+#products .container .container-products .product-item .image-item {
+  height: 150px;
+  border: 1px solid #707070;
+  margin-bottom: 14px;
+}
+#products .container .container-products .product-item h4.name-item {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+#products .container .container-products .product-item p {
+  font-size: 14px;
+  padding-bottom: 14px;
+}
+#products .container .container-products .product-item span {
+  font-size: 13px;
+  display: block;
+}
+#products .container .container-products .product-item h4.price-item {
+  font-size: 18px;
+  color: #707070;
+  padding: 7px 0px;
+}
+#products .container .container-products .product-item a.buttom-item {
+  margin-top: 10px;
+  width: 100%;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#products .container .container-loadMore {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  margin-top: 42px;
+}
+#products .container .container-loadMore .btn-loadMore {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#share-form .container {
   text-align: center;
 }
-#products .container .contTitle h2 {
-  font-size: 23px;
-  width: 55%;
-  margin: 0px 10px;
+#share-form .container #subtitle {
+  font-size: 16px;
+  margin-bottom: 40px;
 }
-#products .container .contTitle .line {
-  height: 1px;
-  width: 80%;
-  color: #707070;
+#share-form .container form .containerInputs {
+  display: flex;
+  justify-content: space-around;
+}
+#share-form .container form .containerInputs .row {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+#share-form .container form .containerInputs .row label {
+  font-size: 15px;
+  color: #888888;
+  text-align: left;
+  margin-bottom: 7px;
+}
+#share-form .container form button {
+  margin-top: 50px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+#footer {
   background-color: #707070;
+  padding: 190px 0px 40px 0px;
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  overflow: hidden;
+}
+#footer .text-footer span {
+  display: block;
+  margin: 8px 0;
+  color: #FFF;
+}
+#footer::before {
+  content: "";
+  position: absolute;
+  width: 190%;
+  height: 140%;
+  top: -130%;
+  background-color: #FFF;
+  left: -10%;
+  transform: rotate(-5deg);
 }/*# sourceMappingURL=main.css.map */
