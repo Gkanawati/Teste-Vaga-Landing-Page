@@ -11,6 +11,24 @@ a, label, span {
     display: none !important;
 }
 
+.inputError {
+    border: 1px solid red !important;
+}
+
+.erro {
+    color: red;
+    display: block;
+    font-size: 80%;
+}
+
+.sucess {
+    color: green;
+    font-size: 90%;
+    text-align: center;
+    margin-top: 3px;
+    display: block;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -63,6 +81,7 @@ a, label, span {
             border-radius: 4px;
             margin: 5px 40px;
             min-width: 130px;
+            text-align: center;
         }
     }
 
@@ -136,6 +155,10 @@ a, label, span {
 
                 button {
                     @extend %btn-actions
+                }
+
+                .formSend {
+                    color: green;
                 }
             }
         }
@@ -261,6 +284,10 @@ a, label, span {
                 padding-left: 8%;
                 padding-right: 8%;
                 @extend %btn-actions;
+            }
+
+            .formSend {
+                color: green;
             }
         }
 
@@ -394,13 +421,3 @@ a, label, span {
         }
     }
 }
-
-/* 
-    Pontos de quebra para usar no @media:
-    
-    xs, extra-pequeno: 0px
-    sm, pequeno: 600px
-    md, medium: 900px
-    lg, large: 1200px
-    xl, extra-large: 1536px
-*/

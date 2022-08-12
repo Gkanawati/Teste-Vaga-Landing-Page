@@ -72,26 +72,35 @@
 
                 </div>
 
-                <form action="" method="post" id="formInfo">
+                <form action="gravarDados" id="formInfo">
+
                     <label for="inputName">Seu Nome:</label>
-                    <input type="text" name="inputName" id="inputName">
-                    <label for="inputName">Email:</label>
-                    <input type="text" name="inputName" id="inputName">
-                    <label for="inputName">CPF:</label>
-                    <input type="text" name="inputName" id="inputName">
+                    <input type="text" name="inputName" id="inputName" class="">
+                    <span class="erro"></span>
+
+                    <label for="inputEmail">Email:</label>
+                    <input type="text" name="inputEmail" id="inputEmail">
+                    <span class="erro"></span>
+
+                    <label for="inputCPF">CPF:</label>
+                    <input type="text" name="inputCPF" id="inputCPF">
+                    <span class="erro"></span>
 
                     <div class="row">
                         <div>
                             <input type="radio" name="inputSex" id="inputSexMasc">
                             <label for="inputSexMasc">Masculino</label>
+                            <span class="erro"></span>
                         </div>
 
                         <div>
                             <input type="radio" name="inputSex" id="inputSexFem">
                             <label for="inputSexFem">Feminino</label>
+                            <span class="erro"></span>
                         </div>
                     </div>
                     <button type="submit">Enviar</button>
+                    <span class="sucess"></span>
                 </form>
             </div>
         </div>
@@ -129,23 +138,26 @@
             </h5>
 
             <div class="containerForm">
-                <form action="">
+                <form action="gravarDados" id="formShare">
                     <div class="containerInputs">
                         <div class="row">
-                            <label for="inputName-share">
+                            <label for="friendName">
                                 Nome do seu amigo:
                             </label>
-                            <input type="text" name="inputName-share" id="inputName-share">
+                            <input type="text" name="friendName" id="friendName">
+                            <span class="erro"></span>
                         </div>
 
                         <div class="row">
-                            <label for="inputEmail-share">
+                            <label for="friendEmail">
                                 Email:
                             </label>
-                            <input type="email" name="inputEmail-share" id="inputEmail-share">
+                            <input type="email" name="friendEmail" id="friendEmail">
+                            <span class="erro"></span>
                         </div>
                     </div>
                     <button type="submit">Enviar Agora</button>
+                    <span class="sucess"></span>
                 </form>
             </div>
 

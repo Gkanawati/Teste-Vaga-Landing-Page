@@ -5,6 +5,13 @@
 
 body {
   font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+a, button {
+  cursor: pointer;
 }
 
 #products .container .container-products .product-item a.buttom-item {
@@ -65,6 +72,24 @@ a, label, span {
   display: none !important;
 }
 
+.inputError {
+  border: 1px solid red !important;
+}
+
+.erro {
+  color: red;
+  display: block;
+  font-size: 80%;
+}
+
+.sucess {
+  color: green;
+  font-size: 90%;
+  text-align: center;
+  margin-top: 3px;
+  display: block;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -106,6 +131,7 @@ a, label, span {
   border-radius: 4px;
   margin: 5px 40px;
   min-width: 130px;
+  text-align: center;
 }
 #header::after {
   content: "";
@@ -163,6 +189,10 @@ a, label, span {
   margin-right: 30px;
   color: #888888;
 }
+#FormAlgorithin .container .row form .formSend {
+  color: green;
+}
+
 #products {
   margin-bottom: 128px;
 }
@@ -256,6 +286,9 @@ a, label, span {
   padding-left: 8%;
   padding-right: 8%;
 }
+#share-form .container form .formSend {
+  color: green;
+}
 
 #footer {
   background-color: #707070;
@@ -345,13 +378,4 @@ a, label, span {
   #share-form .container form .containerInputs .row:first-child {
     margin-bottom: 20px;
   }
-}
-/* 
-    Pontos de quebra para usar no @media:
-
-    xs, extra-pequeno: 0px
-    sm, pequeno: 600px
-    md, medium: 900px
-    lg, large: 1200px
-    xl, extra-large: 1536px
-*//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
