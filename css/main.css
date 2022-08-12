@@ -61,6 +61,10 @@ a, label, span {
   color: #707070;
 }
 
+.remove {
+  display: none !important;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -101,6 +105,7 @@ a, label, span {
   padding: 12px 42px;
   border-radius: 4px;
   margin: 5px 40px;
+  min-width: 130px;
 }
 #header::after {
   content: "";
@@ -148,6 +153,10 @@ a, label, span {
   justify-content: left;
   align-items: center;
   padding: 20px 0;
+}
+#FormAlgorithin .container .row form .row div {
+  display: flex;
+  align-items: center;
 }
 #FormAlgorithin .container .row form .row label {
   padding: 0px 8px;
@@ -205,13 +214,18 @@ a, label, span {
 #products .container .container-loadMore {
   width: 100%;
   max-width: 260px;
+  justify-content: center;
+  display: flex;
   margin: 0 auto;
   margin-top: 42px;
 }
+#products .container .container-loadMore .loading {
+  content: '<img src="assets/loading.gif" width="40px" height="40px" />';
+}
 #products .container .container-loadMore .btn-loadMore {
   width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -265,4 +279,79 @@ a, label, span {
   background-color: #FFF;
   left: -10%;
   transform: rotate(-5deg);
-}/*# sourceMappingURL=main.css.map */
+}
+
+@media (max-width: 600px) {
+  #header .container {
+    text-align: left;
+    padding: 0px 20px;
+  }
+  #FormAlgorithin .container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+  }
+  #FormAlgorithin .container .row .textInfo {
+    width: auto;
+    margin: 0;
+  }
+  #FormAlgorithin .container .row form {
+    width: 100%;
+  }
+  #FormAlgorithin .container .row form .row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+  }
+  #products .container .container-products .product-item {
+    width: 100%;
+    max-width: none;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+  #products .container .container-products .product-item .image-item {
+    width: auto;
+  }
+  #products .container .container-products .product-item .desc-item {
+    display: none;
+  }
+  #products .container .container-products .product-item div {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #products .container .container-products .product-item h4.price-item {
+    font-size: 17px;
+  }
+  .container .contTitle {
+    margin: 0px -25px 50px -25px;
+    margin-bottom: 50px;
+  }
+  .container .contTitle h2 {
+    font-size: 18px;
+    width: 170%;
+  }
+  #share-form .container form .containerInputs {
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  #share-form .container form .containerInputs .row {
+    width: 100%;
+  }
+  #share-form .container form .containerInputs .row:first-child {
+    margin-bottom: 20px;
+  }
+}
+/* 
+    Pontos de quebra para usar no @media:
+
+    xs, extra-pequeno: 0px
+    sm, pequeno: 600px
+    md, medium: 900px
+    lg, large: 1200px
+    xl, extra-large: 1536px
+*//*# sourceMappingURL=main.css.map */
