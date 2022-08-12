@@ -151,8 +151,11 @@ a, label, span {
 
                 .image-item {
                     height: 150px;
-                    border: 1px solid $color-primary;
+                    // border: 1px solid $color-primary;
                     margin-bottom: 14px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
                 }
 
                 h4.name-item {
@@ -198,6 +201,7 @@ a, label, span {
                 padding-left: 10%;
                 padding-right: 10%;
                 @extend %btn-actions;
+                cursor: pointer;
             }
         }
 

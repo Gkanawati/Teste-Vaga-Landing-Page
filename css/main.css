@@ -173,8 +173,10 @@ a, label, span {
 }
 #products .container .container-products .product-item .image-item {
   height: 150px;
-  border: 1px solid #707070;
   margin-bottom: 14px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 #products .container .container-products .product-item h4.name-item {
   font-size: 16px;
@@ -210,6 +212,7 @@ a, label, span {
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
+  cursor: pointer;
 }
 
 #share-form .container {
