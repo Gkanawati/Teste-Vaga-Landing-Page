@@ -360,6 +360,9 @@ a, label, span {
   #products .container .container-products .product-item h4.price-item {
     font-size: 17px;
   }
+  .container {
+    overflow: hidden;
+  }
   .container .contTitle {
     margin: 0px -25px 50px -25px;
     margin-bottom: 50px;
